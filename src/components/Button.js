@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/Button.css";
 
 function Button(props) {
   // This function checks if the value of the button is an operator
@@ -9,8 +10,8 @@ function Button(props) {
   return (
     <div
       className={`button-container ${
-        isOperator(props.children) ? "operator" : null
-      }`}
+        isOperator(props.children) ? "operator" : ""
+      }`.trimEnd()}
     >
       {props.children}
     </div>
