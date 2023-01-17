@@ -1,5 +1,4 @@
 import "./App.css";
-import logo from "./img/freecodecamp-logo.png";
 import Button from "./components/Button";
 import Screen from "./components/Screen";
 import ClearButton from "./components/ClearButton";
@@ -31,10 +30,6 @@ function App() {
 
   return (
     <div className="App">
-      <div className="app-logo-container">
-        <img src={logo} className="app-logo" alt="app-logo" />
-      </div>
-
       <div className="calculator-container">
         <Screen input={input} />
         <div className="row">
